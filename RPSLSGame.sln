@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSLSGame", "RPSLSGame.csproj", "{7D8969BE-2D55-49E3-8212-4AE13F48922D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPSLSGame.Frontend", "..\RPSLSGame.Frontend\RPSLSGame.Frontend.csproj", "{56AA6460-46CA-425A-892E-C13BED921F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSLSGame.Frontend", "..\RPSLSGame.Frontend\RPSLSGame.Frontend.csproj", "{56AA6460-46CA-425A-892E-C13BED921F9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPSLSGame.Tests", "RPSLSGame.Tests\RPSLSGame.Tests.csproj", "{9F874D37-4C4A-4BC6-961E-FE512CD9E4AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSLSGame.Tests", "..\RPSLSGame.Tests\RPSLSGame.Tests.csproj", "{2C21AD1F-FE9E-4B24-AED4-97A0D640CBD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPSLSGame", "RPSLSGame\RPSLSGame.csproj", "{BA9848D8-AAD5-4FDE-BCB9-FA25A02E4125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,17 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D8969BE-2D55-49E3-8212-4AE13F48922D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D8969BE-2D55-49E3-8212-4AE13F48922D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D8969BE-2D55-49E3-8212-4AE13F48922D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D8969BE-2D55-49E3-8212-4AE13F48922D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56AA6460-46CA-425A-892E-C13BED921F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56AA6460-46CA-425A-892E-C13BED921F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56AA6460-46CA-425A-892E-C13BED921F9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C21AD1F-FE9E-4B24-AED4-97A0D640CBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C21AD1F-FE9E-4B24-AED4-97A0D640CBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C21AD1F-FE9E-4B24-AED4-97A0D640CBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C21AD1F-FE9E-4B24-AED4-97A0D640CBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F874D37-4C4A-4BC6-961E-FE512CD9E4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F874D37-4C4A-4BC6-961E-FE512CD9E4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F874D37-4C4A-4BC6-961E-FE512CD9E4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F874D37-4C4A-4BC6-961E-FE512CD9E4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9848D8-AAD5-4FDE-BCB9-FA25A02E4125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9848D8-AAD5-4FDE-BCB9-FA25A02E4125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9848D8-AAD5-4FDE-BCB9-FA25A02E4125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9848D8-AAD5-4FDE-BCB9-FA25A02E4125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,14 +1,15 @@
 # RPSLSGame
 
 ## Overview
-This is a .NET 7.0 Web API project that implements the game "Rock, Paper, Scissors, Lizard, Spock," inspired by the popular TV show *The Big Bang Theory*. The project demonstrates a microservices architecture that replaces a legacy monolithic system.
+This is a .NET 7.0 Web API project that implements the game "Rock, Paper, Scissors, Lizard, Spock," inspired by the popular TV show *The Big Bang Theory*. The project demonstrates a modular architecture with clearly defined services for game logic, random choice generation, and result tracking.
 
 ## Features
-- **REST API**: Provides endpoints to retrieve available choices, get a random choice, and play a round against the computer.
-- **Modern Architecture**: Implements a scalable microservices architecture.
-- **Optional UI**: Allows the possibility of replacing the legacy UI with a modern React frontend (if implemented).
-- **Docker Support**: Includes a Dockerfile for containerization.
-- **Error Handling**: Robust error handling and validation.
+- **REST API**: Provides endpoints to retrieve available choices, generate a random choice, play a round against the computer, view recent game results, and reset the scoreboard.
+- **Modular Architecture**: Implements a clean and maintainable architecture with separate services and interfaces for core functionalities such as game logic, random choice generation, and result tracking.
+- **React Frontend Integration**: Features a modern React frontend that interacts with the backend API, displaying game results, recent scores, and allowing user interaction.
+- **Docker Support**: Includes Docker configuration for easy containerization and deployment of the application.
+- **Robust Error Handling**: Implements comprehensive error handling across both the frontend and backend, ensuring a seamless user experience even in cases of failure.
+- **Unit Testing**: Extensive unit tests cover core functionalities of the API and services, ensuring reliability and facilitating continuous integration.
 
 ## Endpoints
 
@@ -32,8 +33,14 @@ Plays a round of the game against the computer. The player submits their choice,
 ```json
 {
     "results": "win/lose/tie",
-    "player": choice_id,
-    "computer": choice_id
+    "player": {
+        "name": "rock",
+        "image": "/images/rock.png"
+    },
+    "computer": {
+        "name": "paper",
+        "image": "/images/paper.png"
+    }
 }
 ```
 
@@ -41,7 +48,7 @@ Plays a round of the game against the computer. The player submits their choice,
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/RPSLSGame.git
+    git clone https://github.com/borisfeher/RPSLSGame.git
     cd RPSLSGame
     ```
 
@@ -70,13 +77,11 @@ Plays a round of the game against the computer. The player submits their choice,
 ## Technology Stack
 - **.NET 7.0**
 - **ASP.NET Core Web API**
-- **Docker** (Optional)
-- **React** (Optional)
+- **React**
+- **Docker**
 
 ## Future Improvements
-- Implement a scoreboard with the last 10 results.
 - Allow multiple users to play on the same service.
-- Enhance security measures (e.g., authentication, input validation).
 
 ## Credits
 - Game rules based on the "Rock, Paper, Scissors, Lizard, Spock" game by Sam Kass.
