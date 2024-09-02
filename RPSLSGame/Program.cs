@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
-using RPSLSGame.Models;
 using RPSLSGame.Services;
 
 var builder = WebApplication.CreateBuilder(args);
